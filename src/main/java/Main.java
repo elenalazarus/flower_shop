@@ -2,6 +2,9 @@ import default_bouquet.BouquetRose;
 import default_bouquet.BouquetChamomile;
 import default_bouquet.BouquetTulip;
 import default_bouquet.RCT;
+import payments.CashPayment;
+import payments.Payment;
+import payments.Privat24Payment;
 import storage.Storage;
 import flower.Chamomile;
 import flower.Rose;
@@ -65,6 +68,18 @@ public class Main {
 
         }
         System.out.print("Price for your order is: $" + (int) bouquet.getOveralPrice() + "\n");
+        System.out.println("How do you want to pay?");
+        System.out.println(" 1. Privat24 \n 2. Cash");
+        int pay = reader.nextInt();
+        Payment good;
+        if (pay == 1){
+            good = new CashPayment();
+        }
+        if (pay == 2){
+            good = new Privat24Payment();
+        }
+        System.out.println("You have successfully paid!");
+
 
 
 //        Rose rose = Rose.getRandomRose();
