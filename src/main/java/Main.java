@@ -29,15 +29,15 @@ public class Main {
             System.out.println(" 1. Hundred roses \n 2. Hundred chamomiles \n 3. Hundred tulips \n 4. Hundred flowers from roses, tulips and chamomiles");
             int tbouquet = reader.nextInt();
             if (tbouquet == 1){
-                BouquetRose br = BouquetRose.HundredRoses();
+                Bouquet br = BouquetRose.HundredRoses();
                 System.out.println("You have ordered hundred roses!");
             }
             else if (tbouquet == 2){
-                BouquetChamomile bc = BouquetChamomile.HundredChamomiles();
+                Bouquet bc = BouquetChamomile.HundredChamomiles();
                 System.out.println("You have ordered hundred chamomiles!");
             }
             else if (tbouquet == 3){
-                BouquetTulip bt = BouquetTulip.HundredTulips();
+                Bouquet bt = BouquetTulip.HundredTulips();
                 System.out.println("You have ordered hundred tulips!");
             }
             else if (tbouquet == 4){
@@ -61,11 +61,10 @@ public class Main {
             for (int i = 0; i < ntulips; i ++){
                 bouquet.addFlower(Tulip.getRandomTulip());
             }
-            System.out.printf("You have ordered bouquet with %d roses, %d chamomiles and %d tulips! \n", nroses, nchamomiles, ntulips);
-            System.out.println(bouquet);
+            System.out.printf("You have ordered bouquet with %d roses, %d chamomiles and %d tulips! \n \n", nroses, nchamomiles, ntulips);
 
         }
-        System.out.print("Price for your order is: $" + (int) bouquet.getPrice());
+        System.out.print("Price for your order is: $" + (int) bouquet.getOveralPrice() + "\n");
 
 
 //        Rose rose = Rose.getRandomRose();

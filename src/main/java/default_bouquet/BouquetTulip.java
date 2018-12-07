@@ -4,6 +4,7 @@ package default_bouquet;
 import base.Color;
 import flower.Flower;
 import flower.Tulip;
+import set.Bouquet;
 import set.FlowerList;
 import java.util.LinkedList;
 import java.util.List;
@@ -16,7 +17,7 @@ public class BouquetTulip extends FlowerList {
         super(initialFlowers);
     }
 
-    public static BouquetTulip HundredTulips() {
+    public static Bouquet HundredTulips() {
         List<Flower> flowers = new LinkedList();
         Color color = Flower.getRandomColor();
         int length = Flower.getRandomLength();
@@ -26,6 +27,6 @@ public class BouquetTulip extends FlowerList {
             flowers.add(new Tulip(color, price, length));
         }
 
-        return new BouquetTulip(flowers);
+        return new Bouquet(flowers);
     }
 }

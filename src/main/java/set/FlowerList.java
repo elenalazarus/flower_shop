@@ -29,7 +29,7 @@ public abstract class FlowerList {
         return this.flowers.size();
     }
 
-    protected float getOveralPrice() {
+    public float getOveralPrice() {
         float sum = 0.0F;
 
         Flower flower;

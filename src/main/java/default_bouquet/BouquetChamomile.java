@@ -3,6 +3,7 @@ package default_bouquet;
 import base.Color;
 import flower.Chamomile;
 import flower.Flower;
+import set.Bouquet;
 import set.FlowerList;
 import java.util.LinkedList;
 import java.util.List;
@@ -15,7 +16,7 @@ public class BouquetChamomile extends FlowerList {
         super(initialFlowers);
     }
 
-    public static BouquetChamomile HundredChamomiles() {
+    public static Bouquet HundredChamomiles() {
         List<Flower> flowers = new LinkedList();
         Color color = Flower.getRandomColor();
         int length = Flower.getRandomLength();
@@ -25,6 +26,6 @@ public class BouquetChamomile extends FlowerList {
             flowers.add(new Chamomile(color, price, length));
         }
 
-        return new BouquetChamomile(flowers);
+        return new Bouquet(flowers);
     }
 }
