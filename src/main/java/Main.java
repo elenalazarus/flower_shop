@@ -78,7 +78,7 @@ public class Main {
         if (pay == 2){
             good = new Privat24Payment();
         }
-        System.out.println("You have successfully paid!");
+        System.out.println("You have successfully paid");
 
 
 
