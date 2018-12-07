@@ -29,19 +29,19 @@ public class Main {
             System.out.println(" 1. Hundred roses \n 2. Hundred chamomiles \n 3. Hundred tulips \n 4. Hundred flowers from roses, tulips and chamomiles");
             int tbouquet = reader.nextInt();
             if (tbouquet == 1){
-                Bouquet br = BouquetRose.HundredRoses();
+                bouquet = BouquetRose.HundredRoses();
                 System.out.println("You have ordered hundred roses!");
             }
             else if (tbouquet == 2){
-                Bouquet bc = BouquetChamomile.HundredChamomiles();
+                bouquet = BouquetChamomile.HundredChamomiles();
                 System.out.println("You have ordered hundred chamomiles!");
             }
             else if (tbouquet == 3){
-                Bouquet bt = BouquetTulip.HundredTulips();
+                bouquet = BouquetTulip.HundredTulips();
                 System.out.println("You have ordered hundred tulips!");
             }
             else if (tbouquet == 4){
-                RCT brct = RCT.HundredRCT();
+                bouquet = RCT.HundredRCT();
                 System.out.println("You have ordered 34 roses, 33 chamomiles and 33 tulips!");
             }
         }

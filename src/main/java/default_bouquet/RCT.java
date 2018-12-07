@@ -7,6 +7,7 @@ import flower.Chamomile;
 import flower.Flower;
 import flower.Rose;
 import flower.Tulip;
+import set.Bouquet;
 import set.FlowerList;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,7 +20,7 @@ public class RCT extends FlowerList {
         super(initialFlowers);
     }
 
-    public static RCT HundredRCT() {
+    public static Bouquet HundredRCT() {
         List<Flower> flowers = new LinkedList();
         Color color = Flower.getRandomColor();
         int length = Flower.getRandomLength();
@@ -32,6 +33,6 @@ public class RCT extends FlowerList {
         }
         flowers.add(new Rose(color, price, length));
 
-        return new RCT(flowers);
+        return new Bouquet(flowers);
     }
 }
