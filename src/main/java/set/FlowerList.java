@@ -17,7 +17,7 @@ public abstract class FlowerList {
         this.flowers.addAll(initialFlowers);
     }
 
-    private void addFlower(Flower flower) {
+    public void addFlower(Flower flower) {
         this.flowers.add(flower);
     }
 

@@ -1,4 +1,4 @@
-package data.default_bouquet;
+package default_bouquet;
 
 import base.Color;
 import flower.Chamomile;
