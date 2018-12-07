@@ -40,6 +40,14 @@ public class Bouquet extends FlowerList {
         return new Bouquet(flowers);
     }
 
+    public float getPrice() {
+        float price = 0;
+        for (Flower flower: flowers){
+            price = price + flower.getPrice();
+        }
+        return price;
+    }
+
     public String toString() {
         return "Bouquet{flowers=" + this.flowers + '}';
     }

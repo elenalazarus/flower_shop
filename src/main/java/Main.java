@@ -65,6 +65,7 @@ public class Main {
             System.out.println(bouquet);
 
         }
+        System.out.print("Price for your order is: $" + (int) bouquet.getPrice());
 
 
 //        Rose rose = Rose.getRandomRose();
