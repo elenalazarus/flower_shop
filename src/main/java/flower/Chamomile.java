@@ -7,7 +7,7 @@ public class Chamomile extends Flower {
         super(color, price, length);
     }
 
-    public static Chamomile getRandomChamolite() {
+    public static Chamomile getRandomChamolile() {
         return new Chamomile(getRandomColor(), getRandomPrice(), getRandomLength());
     }
 

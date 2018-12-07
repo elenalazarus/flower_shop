@@ -54,10 +54,15 @@ public class Main {
             System.out.println("How much chamomiles do you want to add?");
             int nchamomiles = reader.nextInt();
             for (int i = 0; i < nchamomiles; i ++){
-                bouquet.addFlower(Chamomile.getRandomChamolite());
+                bouquet.addFlower(Chamomile.getRandomChamolile());
             }
             System.out.println("How much tulips do you want to add?");
             int ntulips = reader.nextInt();
+            for (int i = 0; i < ntulips; i ++){
+                bouquet.addFlower(Tulip.getRandomTulip());
+            }
+            System.out.printf("You have ordered bouquet with %d roses, %d chamomiles and %d tulips! \n", nroses, nchamomiles, ntulips);
+            System.out.println(bouquet);
 
         }
 
